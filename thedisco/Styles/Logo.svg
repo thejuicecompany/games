@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="-5.239 0 138.241 113.079" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="201.397" cy="194.219" r="46.566" id="gradient-0" spreadMethod="pad" gradientTransform="matrix(1.006136, 0, 0, 0.893145, 0, 0)">
+      <stop offset="0" style="stop-color: rgba(68, 172, 237, 1)"/>
+      <stop offset="1" style="stop-color: rgba(18, 121, 185, 1)"/>
+    </radialGradient>
+    <linearGradient id="gradient-2" bx:pinned="true">
+      <stop offset="0" style="stop-color: rgb(235, 27, 89);"/>
+      <stop offset="1" style="stop-color: rgb(249, 130, 166);"/>
+    </linearGradient>
+    <linearGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" x1="494" y1="296.149" x2="494" y2="406.229" gradientTransform="matrix(1, 0, 0, 1, 0.00147, 0.00108)" xlink:href="#gradient-2"/>
+  </defs>
+  <rect x="155.781" y="131.876" width="93.703" height="83.18" style="fill: url(#gradient-0); paint-order: fill;" transform="matrix(1, 0, -0.488499, 1, -55.075855, -130.64006)"/>
+  <path d="M 494 296.149 L 508.307 337.308 L 551.873 338.196 L 517.149 364.522 L 529.767 406.229 L 494 381.34 L 458.233 406.229 L 470.851 364.522 L 436.127 338.196 L 479.693 337.308 Z" style="fill-rule: evenodd; stroke-opacity: 0; fill: url(#gradient-2-0);" transform="matrix(-0.809017, 0.587785, -0.587785, -0.809017, 683.614037, 60.768936)" bx:shape="star 494 357 60.851 60.851 0.4 5 1@fa83455d"/>
+</svg>
