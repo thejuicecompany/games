@@ -21,11 +21,14 @@ function initGame() {
   }
 
   var x = 0, y = 0;
+  var countSquares = 0;
 
   function gameLoop() {
     x = Math.floor( Math.random() * (canvas.width - 50) );
     y = Math.floor( Math.random() * (canvas.height - 50) );
     render.fillStyle = getRandomColor();
+    countSquares += 1;
+    console.log(countSquares)
     render.fillRect( x, y, 50, 50 );
 
   }
