@@ -8,7 +8,7 @@ function initGame() {
     document.getElementById( 'splashScreen' ).style.display = 'none';
     document.getElementById( 'mainContent' ).style.display = 'block';
     document.body.style.backgroundColor = '#121212';
-    setInterval( gameLoop, 0 ) // 16 milliseconds is around 60fps
+    setInterval( gameLoop, 1 ) // 16 milliseconds is around 60fps
   }
 
   function getRandomColor() {
@@ -28,7 +28,7 @@ function initGame() {
     y = Math.floor( Math.random() * (canvas.height - 50) );
     render.fillStyle = getRandomColor();
     countSquares += 1;
-    document.getElementById("count").innerHTML = String( countSquares );
+    document.getElementById("counter").innerHTML = countSquares.toLocaleString();
     render.fillRect( x, y, 50, 50 );
 
   }
