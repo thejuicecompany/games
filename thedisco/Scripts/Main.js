@@ -28,7 +28,7 @@ function initGame() {
     y = Math.floor( Math.random() * (canvas.height - 50) );
     render.fillStyle = getRandomColor();
     countSquares += 1;
-    document.getElementById("count").innerHTML = countSquares;
+    document.getElementById("count").innerHTML = String( countSquares );
     render.fillRect( x, y, 50, 50 );
 
   }
