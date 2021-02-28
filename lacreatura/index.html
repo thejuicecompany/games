@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>La creatura</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/blockKeys.min.js" defer></script>
+        <script src="scripts/playerMovement.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <div id="splash">
+            <p>You've reached the exit but <i>it's</i> onto you. <span id="begin" onClick="init()">Run.</span></p>
+            <p>Controls:</p>
+            <p>- Use the Right and Left arrow keys to move</p>
+            <p>- Press F5 to dance</p>
+        </div>
+        <div id="content"><canvas id="game" width="1000" height="300"></canvas></div>
+        <div id="failed">
+            <p>Just retrace your steps, you can't let it end like this.</p>
+            <p>Please perform a dance to retry.</p>
+        </div>
+        <div id="end">PEE</div>
+    </body>
+</html>
