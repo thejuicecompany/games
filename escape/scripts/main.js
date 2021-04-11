@@ -19,6 +19,7 @@ function init() {
     let yDoor = 0;
     let animPlayer = 200;
     let animState = true;
+    let deadSound = new Audio('sound/dead.mp3');
     let endMusic = new Audio('sound/end.mp3');
     let hornSound = new Audio('sound/horn.mp3');
 
@@ -102,6 +103,7 @@ function init() {
 
     function onFail() {
         clearInterval(callLoop);
+        deadSound.play();
         content.display = 'none';
         failed.display = 'block';
         body.backgroundColor = '#000';
