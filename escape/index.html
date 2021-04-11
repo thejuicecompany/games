@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>the phantom's escape</title>
+        <link rel="icon" href="images/ghost.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/confetti.min.js"></script>
+        <script src="scripts/blockKeys.min.js"></script>
+        <script src="scripts/playerMovement.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <div id="splash">
+            <p>one fish two fish red fish blue fish</p>
+            <p>controls:</p>
+            <p>- use the right and left arrow keys to move</p>
+            <p>- press F5 to dance</p>
+            <p><span id="begin" onClick="init()">begin the game</span></p>
+        </div>
+        <div id="content"><canvas id="game" width="1000" height="300"></canvas></div>
+        <div id="failed">
+            <p>sometimes you just need a step backwards to move forward.</p>
+            <p>perform a dance to retry.</p>
+        </div>
+        <div id="end"> <img src="images/ghostHD.png" draggable="false" width="100"><p>hey you did it! good job. how did you manage that? ive always wondered.</p></div>
+    </body>
+</html>
