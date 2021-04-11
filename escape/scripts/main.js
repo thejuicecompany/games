@@ -20,6 +20,7 @@ function init() {
     let animPlayer = 200;
     let animState = true;
     let endMusic = new Audio('sound/end.mp3');
+    let hornSound = new Audio('sound/horn.mp3');
 
     playerMovement({
         37: () => { moveCheck = true; xPlayer -= 1; },
@@ -111,6 +112,7 @@ function init() {
         content.display = 'none';
         end.display = 'block';
         body.backgroundColor = '#89b7ce';
+        hornSound.play();
         endMusic.play();
         confetti.start()
     }
