@@ -88,7 +88,8 @@ function init() {
         // Enemy.
         let gradient = render.createLinearGradient(xEnemy-100,0, xEnemy+100,0);
         gradient.addColorStop(0, '#000');
-        gradient.addColorStop(1, '#00000099');
+        gradient.addColorStop(0.5, '#00000099');
+        gradient.addColorStop(1, '#00000000');
 
         xEnemy += 1.5;
         let en = new Image();
