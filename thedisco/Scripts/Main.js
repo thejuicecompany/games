@@ -3,7 +3,7 @@ document.addEventListener( 'DOMContentLoaded', initGame, false );
 function initGame() {
   var canvas = document.getElementById("gameWindow");
   var render = canvas.getContext("2d");
-  setTimeout( startGame, 1 );
+  setTimeout( startGame, 4000 );
   function startGame() {
     document.getElementById( 'splashScreen' ).style.display = 'none';
     document.getElementById( 'mainContent' ).style.display = 'block';
