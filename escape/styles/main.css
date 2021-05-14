@@ -110,3 +110,8 @@ hr {
 #end p {
     color: white;
 }
+
+#end p:last-child {
+    color: white;
+    font-size: 0.8em;
+}
