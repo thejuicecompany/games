@@ -29,6 +29,7 @@ function init() {
         39: () => { moveCheck = true; gameState = true; if (xPlayer < canvas.width - 50) xPlayer += 1 }
     }, 20);
 
+    bgMusic.play();
     var callLoop = setInterval(gameLoop, 20)
     function gameLoop() {
         if (gameState) {
