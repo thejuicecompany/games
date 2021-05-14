@@ -121,6 +121,8 @@ function init() {
         content.display = 'none';
         end.display = 'block';
         body.backgroundColor = '#89b7ce';
+        hornSound.volume = 0.6;
+        endMusic.volume = 0.6;
         hornSound.play();
         endMusic.play();
         confetti.start()
