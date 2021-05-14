@@ -125,6 +125,7 @@ function init() {
         endMusic.volume = 0.4;
         hornSound.play();
         endMusic.play();
-        confetti.start()
+        confetti.start();
+        setTimeout(() => { confetti.stop() }, 3000);  
     }
 }
