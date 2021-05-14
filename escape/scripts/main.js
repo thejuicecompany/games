@@ -126,6 +126,6 @@ function init() {
         hornSound.play();
         endMusic.play();
         confetti.start();
-        setTimeout(() => { confetti.stop() }, 3000);
+        setTimeout(() => { confetti.stop() }, 1000);
     }
 }
