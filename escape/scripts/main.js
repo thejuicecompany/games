@@ -127,6 +127,5 @@ function init() {
         endMusic.play();
         confetti.start();
         setTimeout(() => { confetti.stop() }, 3000);
-        deadSound.play();
     }
 }
