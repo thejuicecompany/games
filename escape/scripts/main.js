@@ -29,9 +29,11 @@ function init() {
         39: () => { moveCheck = true; gameState = true; if (xPlayer < canvas.width - 50) xPlayer += 1 }
     }, 20);
 
+    bgMusic.volume = 0;
     bgMusic.play();
     var callLoop = setInterval(gameLoop, 20)
     function gameLoop() {
+        bgMusic.volume += 0.01;
         if (gameState) {
           if (xEnemy + 50 > xPlayer) onFail()
         } else {
