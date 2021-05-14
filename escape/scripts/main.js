@@ -33,7 +33,7 @@ function init() {
     bgMusic.play();
     var callLoop = setInterval(gameLoop, 20)
     function gameLoop() {
-        if !bgMusic.volume == 1
+        if (!bgMusic.volume == 1)
             bgMusic.volume += 0.001;
         
         if (gameState) {
