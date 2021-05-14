@@ -107,9 +107,9 @@ function init() {
     }
 
     function onFail() {
-        clearInterval(callLoop);
         bgMusic.pause();
         deadSound.play();
+        clearInterval(callLoop);
         content.display = 'none';
         failed.display = 'block';
         body.backgroundColor = '#000';
