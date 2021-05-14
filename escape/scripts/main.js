@@ -33,7 +33,7 @@ function init() {
     bgMusic.play();
     var callLoop = setInterval(gameLoop, 20)
     function gameLoop() {
-        if (bgMusic.volume < 1) { bgMusic.volume += 0.0001; }
+        if (bgMusic.volume < 1) { bgMusic.volume += 0.0005; }
         
         if (gameState) {
           if (xEnemy + 50 > xPlayer) onFail()
