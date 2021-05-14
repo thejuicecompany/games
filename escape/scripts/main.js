@@ -19,6 +19,7 @@ function init() {
     let yDoor = 0;
     let animPlayer = 200;
     let animState = true;
+    let bgMusic = new Audio('sound/ambience.mp3');
     let deadSound = new Audio('sound/dead.mp3');
     let endMusic = new Audio('sound/end.mp3');
     let hornSound = new Audio('sound/horn.mp3');
@@ -103,6 +104,7 @@ function init() {
 
     function onFail() {
         clearInterval(callLoop);
+        bgMusic.pause();
         deadSound.play();
         content.display = 'none';
         failed.display = 'block';
@@ -111,6 +113,7 @@ function init() {
 
     function onEnd() {
         clearInterval(callLoop);
+        bgMusic.pause();
         content.display = 'none';
         end.display = 'block';
         body.backgroundColor = '#89b7ce';
