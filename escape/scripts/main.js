@@ -30,7 +30,7 @@ function init() {
     }, 20);
 
     bgMusic.volume = 0;
-    bgMusic.play();
+    //bgMusic.play();
     var callLoop = setInterval(gameLoop, 20)
     function gameLoop() {
         if (bgMusic.volume < 1) { bgMusic.volume += 0.001; }
@@ -117,15 +117,15 @@ function init() {
 
     function onEnd() {
         clearInterval(callLoop);
-        bgMusic.pause();
         content.display = 'none';
         end.display = 'block';
         body.backgroundColor = '#89b7ce';
         hornSound.volume = 0.2;
         endMusic.volume = 0.4;
         hornSound.play();
-        endMusic.play();
+        bgMusic.play();
         confetti.start();
+        setInterval(() => {if (bgMusic.volume < 1) { bgMusic.volume += 0.001; }}, 20)
         setTimeout(() => { confetti.stop() }, 1000);
     }
 }
