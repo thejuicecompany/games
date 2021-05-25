@@ -25,7 +25,7 @@ body {
     margin: 0;
     top: 50%;
     left: 50%;
-    right: 12%;
+    right: auto;
     transform: translate(-50%, -50%);
 }
 
