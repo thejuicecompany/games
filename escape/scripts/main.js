@@ -20,6 +20,7 @@ function init() {
     let animPlayer = 200;
     let animState = true;
     let bgMusic = new Audio('sound/ambience.mp3');
+    let bgMusic = new Audio('sound/ambience.mp3');
     let deadSound = new Audio('sound/dead.mp3');
     let endMusic = new Audio('sound/end.mp3');
     let hornSound = new Audio('sound/horn.mp3');
@@ -30,7 +31,7 @@ function init() {
     }, 20);
 
     bgMusic.volume = 0;
-    //bgMusic.play();
+    bgMusic.play();
     var callLoop = setInterval(gameLoop, 20)
     function gameLoop() {
         if (bgMusic.volume < 1) { bgMusic.volume += 0.001; }
@@ -123,9 +124,8 @@ function init() {
         hornSound.volume = 0.2;
         endMusic.volume = 0.4;
         hornSound.play();
-        bgMusic.play();
+        endMusic.play();
         confetti.start();
-        setInterval(() => {if (bgMusic.volume < 1) { bgMusic.volume += 0.001; }}, 20)
         setTimeout(() => { confetti.stop() }, 1000);
     }
 }
