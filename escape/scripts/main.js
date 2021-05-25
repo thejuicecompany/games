@@ -20,7 +20,6 @@ function init() {
     let animPlayer = 200;
     let animState = true;
     let bgMusic = new Audio('sound/ambience.mp3');
-    let bgMusic = new Audio('sound/ambience.mp3');
     let deadSound = new Audio('sound/dead.mp3');
     let endMusic = new Audio('sound/end.mp3');
     let hornSound = new Audio('sound/horn.mp3');
