@@ -116,6 +116,7 @@ function init() {
     }
 
     function onEnd() {
+        bgMusic.pause();
         clearInterval(callLoop);
         content.display = 'none';
         end.display = 'block';
