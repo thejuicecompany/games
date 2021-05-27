@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+    overflow-y: overlay;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    user-select: none;
+}
+
+#splash {
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+}
+
+#splash p:first-child {
+    margin: 0 0 3% 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+hr {
+    border: 1px solid #fff;
+    margin: 0 0 5% 0;
+}
+
+#splash p:last-child {
+    margin: 8% 0 0 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+#splash p {
+    margin: 0 0 1% 0;
+    font-size: 1.5em;
+    color: #b9b4b4;
+}
+
+#begin {
+    color: #fff;
+    cursor: pointer;
+}
+
+#begin:hover {
+    border-bottom: 1px #ff4e4e solid;
+}
+
+#content {
+    display: none;
+}
+
+#game {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #353434;
+  }
+
+#failed {
+    display: none;
+    font-size: 2em;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#failed p {
+    margin-bottom: 3%;
+}
+
+#failed p:last-child {
+    margin: 0 0 1% 0;
+    font-size: 0.8em;
+    color: #b9b4b4;
+}
+
+#end {
+    display: none;
+    font-size: 2em;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#end p {
+    color: white;
+}
+
+#end p:last-child {
+    color: white;
+    font-size: 0.4em;
+}

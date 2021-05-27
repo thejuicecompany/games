@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>project2</title>
+        <link rel="icon" href="images/ghost.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/confetti.min.js"></script>
+        <script src="scripts/blockKeys.min.js"></script>
+        <script src="scripts/playerMovement.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <div id="splash">
+            <!-- <p><i></i></p>
+            <hr> -->
+            <p>controls:</p>
+            <p>- use the right and left arrow keys to move</p>
+            <p><span id="begin" a href="" onClick="init()">start the game</span></p>
+        </div>
+        <div id="content"><canvas id="game" width="400" height="700"></canvas></div>
+        <div id="failed">
+            <p>a simple step back—gets you on track.</p>
+            <p>perform a dance to retry.</p>
+        </div>
+        <div id="end">
+            <!-- <img src="images/ghostHD.png" draggable="false" width="100"> -->
+            <p><i>congratulations! not everything went to plan, but you made it out.</i></p>
+            <p>the end.</p>
+        </div>
+    </body>
+</html>
